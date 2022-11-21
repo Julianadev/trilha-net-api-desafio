@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using TrilhaApiDesafio.Models;
+using System.Text.Json.Serialization;
 
 namespace TrilhaApiDesafio.Context
 {
@@ -7,7 +8,7 @@ namespace TrilhaApiDesafio.Context
     {
         public OrganizadorContext(DbContextOptions<OrganizadorContext> options) : base(options)
         {
-            
+
         }
 
         public DbSet<Tarefa> Tarefas { get; set; }
